@@ -257,8 +257,8 @@ You obviously don't want to keep scanning the QR code every time you want to con
 
 So, you can load the credentials to log back in:
 ```javascript
-const makeWASocket = require("@kangfarrel/felzar-baileys").default;
-const { useMultiFileAuthState } = require("@kangfarrel/felzar-baileys");
+const makeWASocket = require("@alannzxd/AlanBaileys").default;
+const { useMultiFileAuthState } = require("@alannzxd/AlanBaileys");
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
 
@@ -298,8 +298,8 @@ sock.ev.on('messages.upsert', ({ messages }) => {
 > This example includes basic auth storage too
 
 ```javascript
-const makeWASocket = require("@kangfarrel/felzar-baileys").default;
-const { DisconnectReason, useMultiFileAuthState } = require("@kangfarrel/felzar-baileys");
+const makeWASocket = require("@alannzxd/AlanBaileys").default;
+const { DisconnectReason, useMultiFileAuthState } = require("@alannzxd/AlanBaileys");
 const Boom = require('@hapi/boom');
 
 async function connectToWhatsApp () {
@@ -381,8 +381,8 @@ sock.ev.on('messages.update', event => {
 It can be used as follows:
 
 ```javascript
-const makeWASocket = require("@kangfarrel/felzar-baileys").default;
-const { makeInMemoryStore } = require("@kangfarrel/felzar-baileys");
+const makeWASocket = require("@alannzxd/AlanBaileys").default;
+const { makeInMemoryStore } = require("@alannzxd/AlanBaileys");
 // the store maintains the data of the WA connection in memory
 // can be written out to a file & read from it
 const store = makeInMemoryStore({ })
@@ -960,7 +960,7 @@ await sock.sendMessage(jid, {
 If you want to save the media you received
 ```javascript
 const { createWriteStream } = require('fs');
-const { downloadMediaMessage, getContentType } = require("@kangfarrel/felzar-baileys");
+const { downloadMediaMessage, getContentType } = require("@alannzxd/AlanBaileys");
 
 sock.ev.on('messages.upsert', async ({ [m] }) => {
     if (!m.message) return // if there is no text or media message
