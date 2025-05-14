@@ -17,17 +17,17 @@ Here is an example you can use: [example.ts](Example/example.ts) or here is a tu
 
 Use the stable version:
 ```bash
-npm install @kangfarrel/felzar-baileys
+npm install @alannzxd/AlanBaileys
 ```
 
 Use the edge version (no guarantee of stability, but latest fixes + features)
 ```bash
-yarn add @kangfarrel/felzar-baileys@latest
+yarn add @alannzxd/AlanBaileys@latest
 ```
 
 Then import your code using:
 ```javascript
-const { default: makeWASocket } = require("@kangfarrel/felzar-baileys")
+const { default: makeWASocket } = require("@alannzxd/AlanBaileys")
 ```
 
 # Index
@@ -154,7 +154,7 @@ WhatsApp provides a multi-device API that allows Baileys to be authenticated as 
 > You can customize browser name if you connect with **QR-CODE**, with `Browser` constant, we have some browsers config, **see [here](https://baileys.whiskeysockets.io/types/BrowsersMap.html)**
 
 ```javascript
-const { default: makeWASocket } = require("@kangfarrel/felzar-baileys")
+const { default: makeWASocket } = require("@alannzxd/AlanBaileys")
 
 
 const sock = makeWASocket({
@@ -175,7 +175,7 @@ If the connection is successful, you will see a QR code printed on your terminal
 The phone number can't have `+` or `()` or `-`, only numbers, you must provide country code
 
 ```javascript
-const { default: makeWASocket } = require("@kangfarrel/felzar-baileys")
+const { default: makeWASocket } = require("@alannzxd/AlanBaileys")
 
 const sock = makeWASocket({
     // can provide additional config here
