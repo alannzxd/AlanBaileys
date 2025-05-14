@@ -1,8 +1,8 @@
-# <div align='center'>WhatsApp Web API</div>
+# <div align='center'>WhatsApp Web API Type JavaScript</div>
 
 <div align='center'>
 
-![WhatsApp Web API Type JavaScript]
+[MANAGED By AlannXD]
 
 </div>
 
